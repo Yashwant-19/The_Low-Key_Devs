@@ -1,0 +1,16 @@
+{
+    "profiles": [
+        {
+            "email": "example@official.com",
+            "instagram_username": "example_user",
+            "verified": true,
+            "full_name": "Example User",
+            "followers_count": 1000000,
+            "following_count": 500,
+            "posts_count": 1000,
+            "bio": "Official account",
+            "profile_pic_url": "https://example.com/profile.jpg",
+            "last_updated": "2025-09-04T00:00:00Z"
+        }
+    ]
+}

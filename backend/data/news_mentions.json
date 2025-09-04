@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "target_vip": "Virat Kohli",
+    "headline": "BREAKING: Virat Kohli Announces Retirement from International Cricket",
+    "source": "Cricket News Daily",
+    "url": "https://fake-cricket-news.com/virat-retirement",
+    "published_at": "2024-01-15T10:00:00Z",
+    "risk_level": "High",
+    "reason": "False retirement announcement with misleading headline",
+    "detected_at": "2024-01-15T10:15:00Z",
+    "content_snippet": "In a shocking announcement, Indian cricket captain Virat Kohli has decided to retire from international cricket with immediate effect..."
+  },
+  {
+    "id": 2,
+    "target_vip": "Priyanka Chopra",
+    "headline": "Priyanka Chopra Pregnant with Twins, Sources Confirm",
+    "source": "Bollywood Insider",
+    "url": "https://fake-bollywood-news.com/priyanka-pregnant",
+    "published_at": "2024-01-15T09:30:00Z",
+    "risk_level": "Medium",
+    "reason": "Unverified pregnancy rumors",
+    "detected_at": "2024-01-15T09:45:00Z",
+    "content_snippet": "Exclusive sources have confirmed that Priyanka Chopra is expecting twins with husband Nick Jonas..."
+  },
+  {
+    "id": 3,
+    "target_vip": "Elon Musk",
+    "headline": "Tesla Stock Plummets 50% After Elon Musk's Bankruptcy Announcement",
+    "source": "Financial Times Fake",
+    "url": "https://fake-financial-news.com/tesla-crash",
+    "published_at": "2024-01-15T08:45:00Z",
+    "risk_level": "High",
+    "reason": "Financial misinformation affecting stock prices",
+    "detected_at": "2024-01-15T09:00:00Z",
+    "content_snippet": "Tesla shares have crashed following Elon Musk's announcement that the company is filing for bankruptcy..."
+  },
+  {
+    "id": 4,
+    "target_vip": "Deepika Padukone",
+    "headline": "Deepika Padukone Endorses Controversial Weight Loss Product",
+    "source": "Celebrity News Hub",
+    "url": "https://fake-celebrity-news.com/deepika-endorsement",
+    "published_at": "2024-01-15T07:20:00Z",
+    "risk_level": "Medium",
+    "reason": "Fake product endorsement news",
+    "detected_at": "2024-01-15T07:35:00Z",
+    "content_snippet": "Bollywood actress Deepika Padukone has reportedly signed a multi-million dollar deal to endorse a weight loss product..."
+  },
+  {
+    "id": 5,
+    "target_vip": "Narendra Modi",
+    "headline": "PM Modi Announces Free Electricity for All Indians Starting Next Month",
+    "source": "India Today Fake",
+    "url": "https://fake-india-news.com/free-electricity",
+    "published_at": "2024-01-15T06:30:00Z",
+    "risk_level": "High",
+    "reason": "Political misinformation with policy implications",
+    "detected_at": "2024-01-15T06:45:00Z",
+    "content_snippet": "Prime Minister Narendra Modi has announced that all Indian households will receive free electricity starting from next month..."
+  }
+]

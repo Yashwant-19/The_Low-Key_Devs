@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerberus Watch - VIP Threat Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-green': '#00ff41',
+                        'cyber-dark': '#0a0a0a',
+                        'cyber-gray': '#1a1a1a'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); }
+        .cyber-glow { box-shadow: 0 0 20px rgba(0, 255, 65, 0.3); }
+        .cyber-border { border: 1px solid #00ff41; }
+    </style>
+</head>
+<body class="min-h-screen text-white">
+    <!-- Header -->
+    <header class="bg-cyber-dark cyber-border-b p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyber-green">🛡️ Cerberus Watch</h1>
+            <div class="text-sm text-gray-400">VIP Threat Monitoring System</div>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <div id="loginSection" class="min-h-screen flex items-center justify-center">
+        <div class="bg-cyber-gray cyber-border rounded-lg p-8 w-96 cyber-glow">
+            <h2 class="text-2xl font-bold text-cyber-green mb-6 text-center">Login</h2>
+            <form id="loginForm">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Username</label>
+                    <input type="text" id="username" class="w-full p-3 bg-cyber-dark cyber-border rounded text-white focus:outline-none focus:cyber-glow" placeholder="Enter username">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-medium mb-2">Password</label>
+                    <input type="password" id="password" class="w-full p-3 bg-cyber-dark cyber-border rounded text-white focus:outline-none focus:cyber-glow" placeholder="Enter password">
+                </div>
+                <button type="submit" class="w-full bg-cyber-green text-cyber-dark font-bold py-3 rounded hover:bg-opacity-80 transition-all">
+                    Login
+                </button>
+            </form>
+            
+            <!-- Demo Credentials -->
+            <div class="mt-6 p-4 bg-cyber-dark rounded">
+                <h3 class="text-cyber-green font-bold mb-2">Demo Credentials:</h3>
+                <div class="text-sm space-y-1">
+                    <div><strong>Admin:</strong> admin / admin123</div>
+                    <div><strong>Threat Detector:</strong> threat_detector / detect123</div>
+                    <div><strong>Risk Analyst:</strong> risk_analyst / analyze123</div>
+                    <div><strong>DB Auditor:</strong> db_auditor / audit123</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboardSection" class="hidden">
+        <!-- Sidebar -->
+        <div class="fixed left-0 top-0 h-full w-64 bg-cyber-dark cyber-border-r">
+            <div class="p-6">
+                <h2 class="text-xl font-bold text-cyber-green mb-6">Dashboard</h2>
+                <nav class="space-y-2">
+                    <a href="#" onclick="showSection('vips')" class="block p-3 text-white hover:bg-cyber-gray rounded transition-all">
+                        👤 VIP Profiles
+                    </a>
+                    <a href="#" onclick="showSection('fake-posts')" class="block p-3 text-white hover:bg-cyber-gray rounded transition-all">
+                        📱 Fake Posts
+                    </a>
+                    <a href="#" onclick="showSection('deepfakes')" class="block p-3 text-white hover:bg-cyber-gray rounded transition-all">
+                        🎭 Deepfakes
+                    </a>
+                    <a href="#" onclick="showSection('hacked-tweets')" class="block p-3 text-white hover:bg-cyber-gray rounded transition-all">
+                        🐦 Hacked Tweets
+                    </a>
+                    <a href="#" onclick="showSection('news')" class="block p-3 text-white hover:bg-cyber-gray rounded transition-all">
+                        📰 News Mentions
+                    </a>
+                    <a href="#" onclick="showSection('notifications')" class="block p-3 text-white hover:bg-cyber-gray rounded transition-all">
+                        🔔 Notifications
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="ml-64 p-6">
+            <!-- VIP Profiles Section -->
+            <div id="vips" class="section">
+                <h2 class="text-3xl font-bold text-cyber-green mb-6">VIP Profiles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-cyber-gray cyber-border rounded-lg p-6 cyber-glow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-cyber-green rounded-full flex items-center justify-center text-cyber-dark font-bold text-xl mr-4">
+                                VK
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Virat Kohli</h3>
+                                <p class="text-gray-400">Cricket Legend</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-sm">
+                            <div><strong>Instagram:</strong> @virat.kohli</div>
+                            <div><strong>Twitter:</strong> @imVkohli</div>
+                            <div><strong>Risk Level:</strong> <span class="text-yellow-400">Medium</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-cyber-gray cyber-border rounded-lg p-6 cyber-glow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-cyber-green rounded-full flex items-center justify-center text-cyber-dark font-bold text-xl mr-4">
+                                EM
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Elon Musk</h3>
+                                <p class="text-gray-400">Tech Entrepreneur</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-sm">
+                            <div><strong>Instagram:</strong> @elonmusk</div>
+                            <div><strong>Twitter:</strong> @elonmusk</div>
+                            <div><strong>Risk Level:</strong> <span class="text-red-400">High</span></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-cyber-gray cyber-border rounded-lg p-6 cyber-glow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-cyber-green rounded-full flex items-center justify-center text-cyber-dark font-bold text-xl mr-4">
+                                PM
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Priyanka Chopra</h3>
+                                <p class="text-gray-400">Actress & Producer</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-sm">
+                            <div><strong>Instagram:</strong> @priyankachopra</div>
+                            <div><strong>Twitter:</strong> @priyankachopra</div>
+                            <div><strong>Risk Level:</strong> <span class="text-green-400">Low</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fake Posts Section -->
+            <div id="fake-posts" class="section hidden">
+                <h2 class="text-3xl font-bold text-cyber-green mb-6">Fake Posts</h2>
+                <div class="space-y-6">
+                    <div class="bg-cyber-gray cyber-border rounded-lg p-6 cyber-glow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">Fake Retirement Post</h3>
+                            <span class="bg-red-500 text-white px-3 py-1 rounded text-sm">High Risk</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">"After 15 years of cricket, I'm officially retiring. Thank you for all the memories! 🏏 #Retirement #Cricket"</p>
+                        <div class="text-sm text-gray-400">
+                            <div><strong>Target:</strong> Virat Kohli</div>
+                            <div><strong>Platform:</strong> Instagram</div>
+                            <div><strong>Reason:</strong> Impersonation attempt to spread false information</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-cyber-gray cyber-border rounded-lg p-6 cyber-glow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">Fake Product Endorsement</h3>
+                            <span class="bg-yellow-500 text-white px-3 py-1 rounded text-sm">Medium Risk</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Just tried this amazing new crypto investment! Made 10x returns in a week! DM me for details! 🚀💰"</p>
+                        <div class="text-sm text-gray-400">
+                            <div><strong>Target:</strong> Elon Musk</div>
+                            <div><strong>Platform:</strong> Twitter</div>
+                            <div><strong>Reason:</strong> Scam attempt using celebrity endorsement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deepfakes Section -->
+            <div id="deepfakes" class="section hidden">
+                <h2 class="text-3xl font-bold text-cyber-green mb-6">Deepfake Detection</h2>
+                <div class="space-y-6">
+                    <div class="bg-cyber-gray cyber-border rounded-lg p-6 cyber-glow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">AI-Generated Video</h3>
+                            <span class="bg-red-500 text-white px-3 py-1 rounded text-sm">High Risk</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Deepfake video showing Virat Kohli making controversial statements about cricket politics.</p>
+                        <div class="text-sm text-gray-400">
+                            <div><strong>Target:</strong> Virat Kohli</div>
+                            <div><strong>Confidence:</strong> 94% AI-generated</div>
+                            <div><strong>Reason:</strong> Facial manipulation detected, voice synthesis identified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hacked Tweets Section -->
+            <div id="hacked-tweets" class="section hidden">
+                <h2 class="text-3xl font-bold text-cyber-green mb-6">Hacked Tweets</h2>
+                <div class="space-y-6">
+                    <div class="bg-cyber-gray cyber-border rounded-lg p-6 cyber-glow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">Phishing Tweet</h3>
+                            <span class="bg-red-500 text-white px-3 py-1 rounded text-sm">High Risk</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">"🚨 URGENT: My account was compromised! Click here to verify your account: bit.ly/verify-now"</p>
+                        <div class="text-sm text-gray-400">
+                            <div><strong>Target:</strong> Elon Musk</div>
+                            <div><strong>Platform:</strong> Twitter</div>
+                            <div><strong>Reason:</strong> Phishing link detected, suspicious URL pattern</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Mentions Section -->
+            <div id="news" class="section hidden">
+                <h2 class="text-3xl font-bold text-cyber-green mb-6">News Mentions</h2>
+                <div class="space-y-6">
+                    <div class="bg-cyber-gray cyber-border rounded-lg p-6 cyber-glow">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold">Misleading Headline</h3>
+                            <span class="bg-yellow-500 text-white px-3 py-1 rounded text-sm">Medium Risk</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">"BREAKING: Virat Kohli announces retirement from international cricket"</p>
+                        <div class="text-sm text-gray-400">
+                            <div><strong>Source:</strong> FakeNewsDaily.com</div>
+                            <div><strong>Target:</strong> Virat Kohli</div>
+                            <div><strong>Reason:</strong> False information, no official confirmation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notifications Section -->
+            <div id="notifications" class="section hidden">
+                <h2 class="text-3xl font-bold text-cyber-green mb-6">Notifications</h2>
+                <div class="space-y-4">
+                    <div class="bg-red-900 cyber-border rounded-lg p-4">
+                        <div class="flex items-center">
+                            <span class="text-red-400 text-2xl mr-3">🚨</span>
+                            <div>
+                                <h4 class="font-bold">High Risk Alert</h4>
+                                <p class="text-sm text-gray-300">Fake retirement post targeting Virat Kohli detected</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-900 cyber-border rounded-lg p-4">
+                        <div class="flex items-center">
+                            <span class="text-yellow-400 text-2xl mr-3">⚠️</span>
+                            <div>
+                                <h4 class="font-bold">Medium Risk Alert</h4>
+                                <p class="text-sm text-gray-300">Suspicious crypto endorsement post from Elon Musk account</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-900 cyber-border rounded-lg p-4">
+                        <div class="flex items-center">
+                            <span class="text-green-400 text-2xl mr-3">✅</span>
+                            <div>
+                                <h4 class="font-bold">System Status</h4>
+                                <p class="text-sm text-gray-300">All monitoring systems operational</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Login functionality
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Demo credentials
+            const validCredentials = {
+                'admin': 'admin123',
+                'threat_detector': 'detect123',
+                'risk_analyst': 'analyze123',
+                'db_auditor': 'audit123'
+            };
+            
+            if (validCredentials[username] && validCredentials[username] === password) {
+                document.getElementById('loginSection').classList.add('hidden');
+                document.getElementById('dashboardSection').classList.remove('hidden');
+            } else {
+                alert('Invalid credentials! Use the demo credentials provided.');
+            }
+        });
+
+        // Navigation functionality
+        function showSection(sectionName) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionName).classList.remove('hidden');
+        }
+
+        // Show VIPs by default
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!document.getElementById('loginSection').classList.contains('hidden')) {
+                return; // Still on login page
+            }
+            showSection('vips');
+        });
+    </script>
+</body>
+</html>

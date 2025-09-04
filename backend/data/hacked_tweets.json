@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "target_vip": "Virat Kohli",
+    "platform": "Twitter",
+    "tweet_content": "I'm retiring from cricket today. Thanks for all the memories. This is my last tweet. #Goodbye #Cricket",
+    "fake_account": "@imVkohli_hacked",
+    "retweets": 45000,
+    "likes": 125000,
+    "replies": 8900,
+    "risk_level": "High",
+    "reason": "Account compromise with false retirement announcement",
+    "detected_at": "2024-01-15T12:00:00Z",
+    "url": "https://twitter.com/imVkohli_hacked/status/fake_1"
+  },
+  {
+    "id": 2,
+    "target_vip": "Priyanka Chopra",
+    "platform": "Twitter",
+    "tweet_content": "I'm getting divorced from Nick Jonas. It's been a difficult decision. Please respect our privacy. 💔",
+    "fake_account": "@priyankachopra_hacked",
+    "retweets": 32000,
+    "likes": 89000,
+    "replies": 12000,
+    "risk_level": "High",
+    "reason": "Personal life misinformation through hacked account",
+    "detected_at": "2024-01-15T11:30:00Z",
+    "url": "https://twitter.com/priyankachopra_hacked/status/fake_2"
+  },
+  {
+    "id": 3,
+    "target_vip": "Elon Musk",
+    "platform": "Twitter",
+    "tweet_content": "Tesla is going bankrupt. Sell all your stocks now! The company is finished. 📉 #Tesla #StockCrash",
+    "fake_account": "@elonmusk_hacked",
+    "retweets": 78000,
+    "likes": 156000,
+    "replies": 25000,
+    "risk_level": "High",
+    "reason": "Financial market manipulation through hacked account",
+    "detected_at": "2024-01-15T10:45:00Z",
+    "url": "https://twitter.com/elonmusk_hacked/status/fake_3"
+  },
+  {
+    "id": 4,
+    "target_vip": "Deepika Padukone",
+    "platform": "Twitter",
+    "tweet_content": "I'm endorsing this weight loss pill. It helped me lose 30kg! DM me for details. 💊 #WeightLoss #Sponsored",
+    "fake_account": "@deepikapadukone_hacked",
+    "retweets": 15000,
+    "likes": 45000,
+    "replies": 6800,
+    "risk_level": "Medium",
+    "reason": "Fake product endorsement through compromised account",
+    "detected_at": "2024-01-15T09:20:00Z",
+    "url": "https://twitter.com/deepikapadukone_hacked/status/fake_4"
+  },
+  {
+    "id": 5,
+    "target_vip": "Narendra Modi",
+    "platform": "Twitter",
+    "tweet_content": "I'm resigning as PM due to health issues. Elections will be held next month. #Resignation #India",
+    "fake_account": "@narendramodi_hacked",
+    "retweets": 120000,
+    "likes": 200000,
+    "replies": 45000,
+    "risk_level": "High",
+    "reason": "Political misinformation through hacked official account",
+    "detected_at": "2024-01-15T08:30:00Z",
+    "url": "https://twitter.com/narendramodi_hacked/status/fake_5"
+  }
+]
